@@ -1,12 +1,63 @@
-# React + Vite
+# Amazon Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **frontend-only** Amazon Clone built with React and styled using CSS. The project provides an e-commerce shopping experience, including features like product listing, a shopping cart, checkout, and user authentication (removed in this version).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page**: Displays a variety of products with images, prices, and ratings.
+- **Header**: Navigation bar with a search bar, cart, and login button.
+- **Orders Page**: Displays Ordered products details.
+- **Shopping Cart**: Allows users to view added products and remove them.
+- **Checkout Page**: Shows a summary of the cart with a subtotal.
+- **Routing**: Handled using React Router.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**: Component-based UI.
+- **React Router**: Enables navigation between pages.
+- **CSS**: Custom styling for a visually appealing UI.
+
+## Installation
+
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/Mesay-AK/amazon-clone.git
+   cd amazon-clone
+   ```
+
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Start the Application**
+   ```sh
+   npm start
+   ```
+
+## Folder Structure
+
+```
+amazon-clone/
+│-- public/         # Static assets
+│-- src/
+│   ├── components/ # Reusable UI components
+│   ├── pages/      # Different pages (Home, Checkout, etc.)
+│   ├── context/    # State management (if applicable)
+│   ├── styles/     # CSS files
+│   ├── App.js      # Main component
+│   ├── index.js    # Entry point
+│-- package.json
+│-- README.md
+```
+
+## Future Improvements
+
+- Add a backend for user authentication and order management.
+- Implement a better product filtering and sorting system.
+- Improve mobile responsiveness.
+
+## License
+
+This project is for educational purposes only and is not affiliated with Amazon.
+
