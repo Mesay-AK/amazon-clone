@@ -1,0 +1,50 @@
+/* Styling for order container */
+.orders {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.orders__order {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.order {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.order:hover {
+    transform: translateY(-5px);
+}
+
+.order__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.order__item {
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order__item img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+}
+
+.order__total {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: right;
+}

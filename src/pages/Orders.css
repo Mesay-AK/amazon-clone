@@ -1,0 +1,56 @@
+/* Container for orders */
+.orders {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+
+.orders__container {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Each order card */
+.order {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px -9px rgba(0, 0, 0, 0.75);
+
+  transition: transform 0.1s ease-in;
+}
+
+.order:hover {
+  /* transform: translateY(-5px); */
+  transform: scale(1.05);
+}
+
+
+.order__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.order__item {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order__item img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: cover;
+}
+
+/* Total price */
+.order__total {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: right;
+}
